@@ -9,6 +9,10 @@
 import UIKit
 
 
+protocol passInput: AnyObject{
+    func data(textInput: String)
+}
+
 class ScreenTwo: UIViewController {
     
     lazy var textField: UITextField = {
@@ -56,9 +60,14 @@ class ScreenTwo: UIViewController {
     }
 
 
+    
     @objc func pushScreenOne() {
         print("Send button works")
+        let actualInput = textField.text
+        print(actualInput!)
         dismiss(animated: true, completion: nil)
     }
-//
+    
+
+
 }
