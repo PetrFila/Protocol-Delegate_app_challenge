@@ -9,7 +9,7 @@
 import UIKit
 
 
-class Screen1: UIViewController {
+class ScreenOne: UIViewController {
 
     lazy var label: UILabel = {
         let field = UILabel()

@@ -25,7 +25,7 @@ class ScreenTwo: UIViewController {
         button.backgroundColor = UIColor.yellow
         button.setTitle("SEND", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
-        button.addTarget(self, action: #selector(pushScreenTwo), for: .touchUpInside)
+        button.addTarget(self, action: #selector(pushScreenOne), for: .touchUpInside)
         return button
     }()
     
@@ -56,8 +56,9 @@ class ScreenTwo: UIViewController {
     }
 
 
-    @objc func pushScreenTwo() {
+    @objc func pushScreenOne() {
         print("Send button works")
+        dismiss(animated: true, completion: nil)
     }
 //
 }
