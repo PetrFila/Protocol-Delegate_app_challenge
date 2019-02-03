@@ -35,8 +35,8 @@ class ViewController: UIViewController {
         view.addSubview(label)
         label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         label.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        label.widthAnchor.constraint(equalToConstant: 70).isActive = true
-        label.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        label.widthAnchor.constraint(equalToConstant: 340).isActive = true
+        label.heightAnchor.constraint(equalToConstant: 60).isActive = true
 
     }
 
