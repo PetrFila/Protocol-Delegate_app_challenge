@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Screen2.swift
 //  Protocol_challenge
 //
 //  Created by Petr Fila on 3/2/19.
@@ -9,21 +9,21 @@
 import UIKit
 
 
-class ViewController: UIViewController {
-
-    lazy var label: UILabel = {
-        let field = UILabel()
+class ScreenTwo: UIViewController {
+    
+    lazy var textField: UITextField = {
+        let field = UITextField()
         field.translatesAutoresizingMaskIntoConstraints = false
         field.font = UIFont.systemFont(ofSize: 14)
         field.backgroundColor = UIColor.yellow
         return field
     }()
-    
+
     lazy var button: UIButton = {
-       let button = UIButton()
+        let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = UIColor.yellow
-        button.setTitle("PUSH", for: .normal)
+        button.setTitle("SEND", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(self, action: #selector(pushScreenTwo), for: .touchUpInside)
         return button
@@ -34,32 +34,30 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        view.backgroundColor = UIColor.red
+        view.backgroundColor = UIColor.lightGray
         
         layoutProperties()
     }
-
+    
     private func layoutProperties() {
-        view.addSubview(label)
-        label.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        label.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 250).isActive = true
-        label.widthAnchor.constraint(equalToConstant: 340).isActive = true
-        label.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        
-        
+        view.addSubview(textField)
+        textField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        textField.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 250).isActive = true
+        textField.widthAnchor.constraint(equalToConstant: 340).isActive = true
+        textField.heightAnchor.constraint(equalToConstant: 60).isActive = true
+
+
         view.addSubview(button)
-        button.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 50).isActive = true
+        button.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 50).isActive = true
         button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         button.widthAnchor.constraint(equalToConstant: 340).isActive = true
         button.heightAnchor.constraint(equalToConstant: 60).isActive = true
     }
-    
-    
+
+
     @objc func pushScreenTwo() {
-        print("button works")
+        print("Send button works")
     }
-
+//
 }
-
