@@ -9,19 +9,17 @@
 /* Begin PBXBuildFile section */
 		C9CDDDAF2206AB8900A799F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDDDAE2206AB8900A799F2 /* AppDelegate.swift */; };
 		C9CDDDB12206AB8900A799F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CDDDB02206AB8900A799F2 /* ViewController.swift */; };
-		C9CDDDB42206AB8900A799F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9CDDDB22206AB8900A799F2 /* Main.storyboard */; };
 		C9CDDDB62206AB8A00A799F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9CDDDB52206AB8A00A799F2 /* Assets.xcassets */; };
-		C9CDDDB92206AB8A00A799F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9CDDDB72206AB8A00A799F2 /* LaunchScreen.storyboard */; };
+		C9CDDDC12206C37300A799F2 /* default.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9CDDDC02206C37300A799F2 /* default.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9CDDDAB2206AB8900A799F2 /* Protocol_challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Protocol_challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CDDDAE2206AB8900A799F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9CDDDB02206AB8900A799F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C9CDDDB32206AB8900A799F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9CDDDB52206AB8A00A799F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C9CDDDB82206AB8A00A799F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9CDDDBA2206AB8A00A799F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9CDDDC02206C37300A799F2 /* default.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = default.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +36,7 @@
 		C9CDDDA22206AB8900A799F2 = {
 			isa = PBXGroup;
 			children = (
+				C9CDDDC02206C37300A799F2 /* default.xib */,
 				C9CDDDAD2206AB8900A799F2 /* Protocol_challenge */,
 				C9CDDDAC2206AB8900A799F2 /* Products */,
 			);
@@ -56,9 +55,7 @@
 			children = (
 				C9CDDDAE2206AB8900A799F2 /* AppDelegate.swift */,
 				C9CDDDB02206AB8900A799F2 /* ViewController.swift */,
-				C9CDDDB22206AB8900A799F2 /* Main.storyboard */,
 				C9CDDDB52206AB8A00A799F2 /* Assets.xcassets */,
-				C9CDDDB72206AB8A00A799F2 /* LaunchScreen.storyboard */,
 				C9CDDDBA2206AB8A00A799F2 /* Info.plist */,
 			);
 			path = Protocol_challenge;
@@ -122,9 +119,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9CDDDB92206AB8A00A799F2 /* LaunchScreen.storyboard in Resources */,
 				C9CDDDB62206AB8A00A799F2 /* Assets.xcassets in Resources */,
-				C9CDDDB42206AB8900A799F2 /* Main.storyboard in Resources */,
+				C9CDDDC12206C37300A799F2 /* default.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,25 +137,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C9CDDDB22206AB8900A799F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9CDDDB32206AB8900A799F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C9CDDDB72206AB8A00A799F2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9CDDDB82206AB8A00A799F2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C9CDDDBB2206AB8A00A799F2 /* Debug */ = {
