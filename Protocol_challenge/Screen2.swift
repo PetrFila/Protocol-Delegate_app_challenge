@@ -9,7 +9,7 @@
 import UIKit
 
 
-protocol passInput: AnyObject{
+protocol PassInput: class {
     func data(textInput: String)
 }
 
@@ -19,28 +19,29 @@ class ScreenTwo: UIViewController {
         let field = UITextField()
         field.translatesAutoresizingMaskIntoConstraints = false
         field.font = UIFont.systemFont(ofSize: 14)
-        field.backgroundColor = UIColor.yellow
+        field.backgroundColor = UIColor.white
+        field.placeholder = "Type something here"
         return field
     }()
 
     lazy var button: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = UIColor.yellow
-        button.setTitle("SEND", for: .normal)
+        button.backgroundColor = UIColor.init(red: 66/255, green: 134/255, blue: 244/255, alpha: 1)
+        button.setTitle("Tap here for magic", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(self, action: #selector(pushScreenOne), for: .touchUpInside)
         return button
     }()
     
     
-    weak var thisIsDelegate: passInput?
+    weak var thisIsDelegate: PassInput?
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.lightGray
+        view.backgroundColor = UIColor.init(red: 232/255, green: 232/255, blue: 232/255, alpha: 1)
         
         layoutProperties()
     }

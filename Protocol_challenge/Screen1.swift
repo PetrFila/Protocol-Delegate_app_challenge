@@ -15,15 +15,15 @@ class ScreenOne: UIViewController {
         let field = UILabel()
         field.translatesAutoresizingMaskIntoConstraints = false
         field.font = UIFont.systemFont(ofSize: 14)
-        field.backgroundColor = UIColor.yellow
+        field.backgroundColor = UIColor.white
         return field
     }()
     
     lazy var button: UIButton = {
        let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = UIColor.yellow
-        button.setTitle("PUSH", for: .normal)
+        button.backgroundColor = UIColor.init(red: 66/255, green: 134/255, blue: 244/255, alpha: 1)
+        button.setTitle("Go to next screen", for: .normal)
         button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(self, action: #selector(pushScreenTwo), for: .touchUpInside)
         return button
@@ -35,7 +35,7 @@ class ScreenOne: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.red
+        view.backgroundColor = UIColor.lightGray
         
         layoutProperties()
     }
@@ -65,7 +65,7 @@ class ScreenOne: UIViewController {
 
 }
 
-extension ScreenOne: passInput {
+extension ScreenOne: PassInput {
     func data(textInput: String) {
         label.text = textInput
     }
