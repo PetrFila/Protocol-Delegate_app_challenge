@@ -34,7 +34,8 @@ class ScreenTwo: UIViewController {
     }()
     
     
-    
+    weak var thisIsDelegate: passInput?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,10 +65,11 @@ class ScreenTwo: UIViewController {
     @objc func pushScreenOne() {
         print("Send button works")
         let actualInput = textField.text
+        thisIsDelegate?.data(textInput: actualInput!)
         print(actualInput!)
         dismiss(animated: true, completion: nil)
     }
     
-
-
+    
+   
 }

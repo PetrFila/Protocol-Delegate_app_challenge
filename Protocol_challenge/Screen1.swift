@@ -30,7 +30,7 @@ class ScreenOne: UIViewController {
     }()
     
     
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,8 +59,14 @@ class ScreenOne: UIViewController {
     @objc func pushScreenTwo() {
         print(#function)
         let connectScreen = ScreenTwo()
+        connectScreen.thisIsDelegate = self
         present(connectScreen,animated: true)
     }
 
 }
 
+extension ScreenOne: passInput {
+    func data(textInput: String) {
+        label.text = textInput
+    }
+}
